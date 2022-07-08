@@ -3,6 +3,8 @@
 //Modificacion colores primario y secundario
 $primary: #5265E1;
 $secondary: #FA5959;
+$nav-link-color: #8c8c8c;
+$nav-link-hover-color: rgb(0, 0, 0);
 
 
 *{
@@ -12,6 +14,7 @@ $secondary: #FA5959;
 
 p{
     color: grey;
+    font-size: 1.2rem;
 }
 
 
@@ -26,16 +29,31 @@ p{
     width: 8em;
 }
 
-.blue-form-right{
+.pill-right{
     position: absolute;
     z-index: -1;
-    width: 300%;
+    width: 100%;
     height: 70%;
     top: 30%;
     left: 40%;
 }
 
+.pill-left{
+    position: absolute;
+    z-index: -1;
+    width: 120%;
+    height: 100%;
+    top: 25%;
+    left: -45%;
+}
 
+.nav-tabs .nav-item .nav-link.active {
+	border-bottom: 4px solid $secondary;
+}
+
+
+
+//Responsive NavBar para Móviles y Tablets
 @media (max-width: 991px){
     $navbar-light-active-color: #fff !important;
     $color1: #3e4bbb;

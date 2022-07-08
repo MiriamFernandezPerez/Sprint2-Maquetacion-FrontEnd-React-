@@ -1,0 +1,123 @@
+@import 'menu';
+
+//Modificacion colores primario y secundario
+$primary: #5265E1;
+$secondary: #FA5959;
+
+
+*{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    color: grey;
+}
+
+
+
+.navbar-collapse {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary{
+    width: 8em;
+}
+
+.blue-form-right{
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 70%;
+    top: 30%;
+    left: 40%;
+}
+
+
+@media (max-width: 991px){
+    $navbar-light-active-color: #fff !important;
+    $color1: #3e4bbb;
+    $color2: #2131c0;
+    
+    .navbar-collapse {
+        width: 100%;
+        background-color: $primary;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link.active {
+        color: $navbar-light-active-color;
+    }
+
+    .btn-secondary {
+        background-color: $color1 !important;
+    }
+
+    .btn-secondary:hover {
+        background-color: $color2 !important;
+    }
+
+    .nav-item:hover{
+        background-color: $color2 !important;
+    }
+
+    .nav-item::after{
+        display: block;
+        height: 1px;
+        background-color: #fff;
+        content: "";
+        width: 100%;
+    }
+
+    
+    
+
+
+     
+
+    
+}
+   
+
+
+
+// .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+//     background-color: #5265E1 transparent;
+// }
+// .navbar-default .navbar-toggle{
+//     border-color: #5265E1 transparent;
+// }
+
+// .nav-link{
+//     padding-right: 10px;
+    
+//     &:hover{
+//     color: $secondary-color;
+//     }
+//    }
+
+// .text{
+//     color: $gray-500;
+
+// }
+// .section-right{
+//     background-size:70%;
+// }
+// .features{
+//     display:flex;
+//     direction:column;
+//     justify-content: center;
+//     align-items: center;
+// }
+// .features-text{
+//     color: $gray-500;
+// }
+
+//Importacion Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
+
+

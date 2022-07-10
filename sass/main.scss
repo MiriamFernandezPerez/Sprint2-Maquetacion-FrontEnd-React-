@@ -59,14 +59,12 @@ p{
     align-items: center;
     margin: 1rem;
     justify-content: center;
-    
 }
 
 .cards{
-    width: 25%;
     padding: 1rem;
     margin-right: 1rem;
-    
+    margin-left: 1rem;
 }
 
 .card-img-top{
@@ -110,6 +108,19 @@ p{
         background-color: #fff;
         content: "";
         width: 100%;
+    }
+
+    .downloads{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        // padding: 0;
+        margin-right: 0;
     }
 
     

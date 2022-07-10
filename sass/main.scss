@@ -22,7 +22,6 @@ p{
 }
 
 
-
 .navbar-collapse {
     text-align: center;
     justify-content: center;
@@ -53,6 +52,25 @@ p{
 
 .nav-tabs .nav-item .nav-link.active {
 	border-bottom: 4px solid $secondary;
+}
+
+.downloads{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: center;
+    
+}
+
+.cards{
+    width: 25%;
+    padding: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.card-img-top{
+    padding: 2rem;
 }
 
 

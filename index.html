@@ -24,12 +24,12 @@
             <img src="imagenes/icon-hamburger.svg" alt="Icono Menu Hamburguesa">
           </button>
         </div>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item text-uppercase"><a class="nav-link active px-5" aria-current="page" href="#">Features</a></li>
             <li class="nav-item text-uppercase"><a class="nav-link active px-5" aria-current="page" href="#">Pricing</a></li>
             <li class="nav-item text-uppercase"><a class="nav-link active px-5" aria-current="page" href="#">Contact</a></li>
-            <li><button class="btn btn-secondary text-white text-uppercase border border-white mt-2" type="submit">Login</button></li>
+            <li><button class="btn btn-secondary text-white text-uppercase border border-white" type="submit">Login</button></li>
           </ul>
         </div>
       </div>
@@ -38,9 +38,9 @@
 
   <main>
     <!-- Contenido principal -->
-    <section class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 m-auto order-2 order-lg-1 p-3 text-center-sm">
+    <section class="container mb-5">
+      <article class="row">
+        <div class="col-12 col-lg-6 m-auto order-2 order-lg-1 p-4 text-center-sm">
           <h1>A Simple Bookmark Manager</h1>
           <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <div class="d-grid gap-2 d-md-block">
@@ -54,51 +54,53 @@
           <div class="pill-right rounded-pill bg-primary"></div>
         </div>
 
-      </div>
+      </article>
     </section>
 
     <!-- Ejercicio 2 -->
     <!-- Features -->
-    <section class="container">
-      <div class="row">
+    <section class="container mb-5">
+      <article class="row">
         <div class="col-12 m-auto order-2 order-lg-1 p-3 text-center">
           <h2>Features</h2>
-          <p class="mx-5 px-5">Our aim is to make it quick and easy for you to access your favourite websites. your bookmarks sync between your devices so you can access them on the go.</p>
+          <p class="mx-lg-5 px-lg-5">Our aim is to make it quick and easy for you to access your favourite websites. your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="row">
-        <ul class="nav nav-tabs col-12 text-center justify-content-center mb-5">
-          <li class="nav-item">
+      <article class="row container-fluid ms-1 ms-lg-0 mb-5">
+        <ul class="nav nav-tabs text-center justify-content-center" >
+          <li class="nav-item col-12 col-lg-3">
             <a class="nav-link active" data-bs-toggle="tab" type="button">Simple Bookmarking</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col-12 col-lg-3">
             <a class="nav-link" data-bs-toggle="tab" type="button">Speedy Searching</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item col-12 col-lg-3">
             <a class="nav-link" data-bs-toggle="tab" type="button">Easy Sharing</a>
           </li>
         </ul>
-      </div>
+      </article>
       
 
       <div class="tab-content" id="myTabContent">
         <section>
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-6 text-center position-relative">
+          <article class="row align-items-center">
+            <div class="col-12 col-lg-6 text-center position-relative px-3 px-lg-0 mb-5 mb-lg-0">
               <img class="img-fluid" src="./imagenes/illustration-features-tab-1.svg" alt="Features Tab 1">
               <div class="pill-left rounded-pill bg-primary"></div>
             </div>
-            <div class="col-12 col-lg-6 text-center text-lg-start px-lg-5 pe-5">
+            <div class="col-12 col-lg-6 text-center text-lg-start px-lg-5 pe-5 mt-5 mt-lg-1">
               <h3>Bookmark in one click</h3>
               <p class="text-black-50 mx-5 mx-lg-0 pe-lg-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
               <button type="button"
                 class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"><span class="small">More info</span></button>
             </div>
-          </div>
+          </article>
         </section>
       </div>
     </section>
+
+    
 
   </main>
 

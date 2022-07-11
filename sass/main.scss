@@ -5,6 +5,8 @@ $primary: #5265E1;
 $secondary: #FA5959;
 $nav-link-color: #8c8c8c;
 $nav-link-hover-color: #000;
+$secondary-dark: #fe3b3b;
+$colorhoverbtn: $secondary-dark;
 
 
 //Modificacion colores acordeon
@@ -12,12 +14,8 @@ $accordion-button-active-bg: #fff;
 $accordion-button-active-color: #000;
 $accordion-icon-color: $primary;
 $accordion-icon-active-color: $secondary;
-
-
 $accordion-button-icon: url("../imagenes/icon-arrow.svg");
 $accordion-button-active-icon: url("../imagenes/icon-arrow-active.svg");
-
-
 
 
 *{
@@ -84,12 +82,17 @@ p{
     padding: 2rem;
 }
 
+.btn-secondary:hover {
+    background-color: $secondary-dark !important;
+}
+
 
 //Responsive NavBar para Móviles y Tablets
 @media (max-width: 991px){
     $navbar-light-active-color: #fff !important;
     $color1: #3e4bbb;
     $color2: #2131c0;
+    
     
     .navbar-collapse {
         width: 100%;
@@ -103,16 +106,12 @@ p{
     }
 
     .btn-secondary {
-        background-color: $color1 !important;
+        background-color: $color1;
         margin-top: .5rem;
     }
 
-    .btn-secondary:hover {
-        background-color: $color2 !important;
-    }
-
     .nav-item:hover{
-        background-color: $color2 !important;
+        background-color: $color2;
     }
 
     .nav-item::after{
@@ -136,49 +135,20 @@ p{
         margin-right: 0;
     }
 
-    
-    
+    .rrss{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-
-     
-
+    .rrss img{
+        margin: 0.5rem 0;
+        width: 2em;
+        
+    }
     
 }
    
-
-
-
-// .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-//     background-color: #5265E1 transparent;
-// }
-// .navbar-default .navbar-toggle{
-//     border-color: #5265E1 transparent;
-// }
-
-// .nav-link{
-//     padding-right: 10px;
-    
-//     &:hover{
-//     color: $secondary-color;
-//     }
-//    }
-
-// .text{
-//     color: $gray-500;
-
-// }
-// .section-right{
-//     background-size:70%;
-// }
-// .features{
-//     display:flex;
-//     direction:column;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .features-text{
-//     color: $gray-500;
-// }
 
 //Importacion Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss'

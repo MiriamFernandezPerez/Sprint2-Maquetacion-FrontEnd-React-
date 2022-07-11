@@ -4,7 +4,20 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $nav-link-color: #8c8c8c;
-$nav-link-hover-color: rgb(0, 0, 0);
+$nav-link-hover-color: #000;
+
+
+//Modificacion colores acordeon
+$accordion-button-active-bg: #fff;
+$accordion-button-active-color: #000;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+
+
+$accordion-button-icon: url("../imagenes/icon-arrow.svg");
+$accordion-button-active-icon: url("../imagenes/icon-arrow-active.svg");
+
+
 
 
 *{

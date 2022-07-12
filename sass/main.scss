@@ -169,7 +169,6 @@ svg:hover{
     .cards{
         display: flex;
         flex-direction: column;
-        // padding: 0;
         margin-right: 0;
     }
 
@@ -183,9 +182,22 @@ svg:hover{
         margin: 0.5rem 0;
         width: 2em;
     }
-    
 }
-   
+
+//Cards y Herencia
+@media (min-width: 991px){
+    
+    .downloads {
+        &>:nth-child(2) {
+           position: relative;
+           top: 1rem;
+        }
+        &>:nth-child(3) {
+           position: relative;
+           top: 2rem;
+        }
+     }
+}
 
 
 

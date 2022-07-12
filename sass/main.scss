@@ -6,7 +6,8 @@ $secondary: #FA5959;
 $nav-link-color: #8c8c8c;
 $nav-link-hover-color: #000;
 $secondary-dark: #fe3b3b;
-$colorhoverbtn: $secondary-dark;
+$color-btn-hover: #fff;
+
 
 
 //Modificacion colores acordeon
@@ -16,6 +17,11 @@ $accordion-icon-color: $primary;
 $accordion-icon-active-color: $secondary;
 $accordion-button-icon: url("../imagenes/icon-arrow.svg");
 $accordion-button-active-icon: url("../imagenes/icon-arrow-active.svg");
+
+
+//Importacion Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 
 
 *{
@@ -37,6 +43,10 @@ p{
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.nav-link:hover{
+    color: $secondary !important;
 }
 
 .btn-secondary{
@@ -62,7 +72,7 @@ p{
 }
 
 .nav-tabs .nav-item .nav-link.active {
-	border-bottom: 4px solid $secondary;
+	border-bottom: 4px solid $secondary !important;
 }
 
 .downloads{
@@ -82,9 +92,37 @@ p{
     padding: 2rem;
 }
 
-.btn-secondary:hover {
-    background-color: $secondary-dark !important;
+.btn:hover{
+    background-color: $color-btn-hover !important;
 }
+
+.btn-primary:hover {
+    border: 1px solid $primary !important;
+    color: $primary !important;
+}
+
+.btn-secondary:hover {
+    border: 1px solid $secondary !important;
+    color: $secondary !important;
+    font-weight: 500;
+}
+
+.btn-light:hover {
+    border: 1px solid $nav-link-hover-color !important;
+}
+
+.accordion-button:hover{
+    color: $secondary !important;
+}
+
+svg{
+    fill: #fff;
+}
+
+svg:hover{
+    fill: $secondary;
+}
+
 
 
 //Responsive NavBar para Móviles y Tablets
@@ -144,14 +182,11 @@ p{
     .rrss img{
         margin: 0.5rem 0;
         width: 2em;
-        
     }
     
 }
    
 
-//Importacion Bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
 
 
 

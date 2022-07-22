@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Ejercicio 1 -->
@@ -67,26 +71,25 @@
         </div>
       </article>
 
-      <article class="row container-fluid ms-1 ms-lg-0 mb-5">
-        <ul class="nav nav-tabs text-center justify-content-center" >
-          <li class="nav-item col-12 col-lg-3">
-            <a class="nav-link active" data-bs-toggle="tab" type="button">Simple Bookmarking</a>
-          </li>
-          <li class="nav-item col-12 col-lg-3">
-            <a class="nav-link" data-bs-toggle="tab" type="button">Speedy Searching</a>
-          </li>
-          <li class="nav-item col-12 col-lg-3">
-            <a class="nav-link" data-bs-toggle="tab" type="button">Easy Sharing</a>
-          </li>
-        </ul>
-      </article>
-      
+      <div class="row container-fluid ms-1 ms-lg-0 mb-5">
+          <ul class="nav nav-tabs text-center justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item col-12 col-lg-3">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</a>
+            </li>
+            <li class="nav-item col-12 col-lg-3">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</a>
+            </li>
+            <li class="nav-item col-12 col-lg-3">
+              <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Easy Sharing</a>
+            </li>
+          </ul>
+      </div>
 
-      <div class="tab-content" id="myTabContent">
-        <section class="container mb-5">
-          <article class="row align-items-center">
+      <div class="tab-content mb-5">
+        <div class="container tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row align-items-center">
             <div class="col-12 col-lg-6 text-center position-relative px-3 px-lg-0 mb-5 mb-lg-0">
-              <img class="img-fluid" src="./imagenes/illustration-features-tab-1.svg" alt="Features Tab 1">
+              <img class="img-fluid" src="./imagenes/illustration-features-tab-1.svg" alt="Features Tab 3">
               <div class="pill-left rounded-pill bg-primary"></div>
             </div>
             <div class="col-12 col-lg-6 text-center text-lg-start px-lg-5 pe-5 mt-5 mt-lg-1">
@@ -96,11 +99,40 @@
                 class="btn btn-primary"><span>More info</span>
               </button>
             </div>
-          </article>
-        </section>
+          </div>
+        </div>
+        <div class="container tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-center position-relative px-3 px-lg-0 mb-5 mb-lg-0">
+              <img class="img-fluid" src="./imagenes/illustration-features-tab-1.svg" alt="Features Tab 3">
+              <div class="pill-left rounded-pill bg-primary"></div>
+            </div>
+            <div class="col-12 col-lg-6 text-center text-lg-start px-lg-5 pe-5 mt-5 mt-lg-1">
+              <h3>Speedy Searching</h3>
+              <p class="mx-2 mx-lg-0 pe-lg-5">Speedy Search & Registry Inc. has been honoured to provide Canadians with a full line of search and registration services since 2001.  We continue to build a reputation of trust, professionalism, and excellent customer service with our clients.</p>
+              <button type="button"
+                class="btn btn-primary"><span>More info</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-center position-relative px-3 px-lg-0 mb-5 mb-lg-0">
+              <img class="img-fluid" src="./imagenes/illustration-features-tab-1.svg" alt="Features Tab 3">
+              <div class="pill-left rounded-pill bg-primary"></div>
+            </div>
+            <div class="col-12 col-lg-6 text-center text-lg-start px-lg-5 pe-5 mt-5 mt-lg-1">
+              <h3>Easy Sharing</h3>
+              <p class="mx-2 mx-lg-0 pe-lg-5">Is an light app allowing user to share files with a personal code. It's an online storage. If you need to share some files in a private group, like a class, a working group, a friend group you will just need to use an email address and create a password with which your group can reach files you have uploaded for them.</p>
+              <button type="button"
+                class="btn btn-primary"><span>More info</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- Ejercicio 3 -->
     <!-- Downloads -->
     <section class="container text-center">
@@ -267,6 +299,7 @@
 
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </body>
 </html>
